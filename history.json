@@ -1,0 +1,47 @@
+[
+    {
+        "item": "Chocolate Cake",
+        "quantity": 3,
+        "ingredients_used": [
+            {
+                "name": "Flour",
+                "amount": 1.5,
+                "unit": "kg"
+            },
+            {
+                "name": "Eggs",
+                "amount": 6,
+                "unit": "pcs"
+            }
+        ],
+        "timestamp": "2025-07-19 16:31:42"
+    },
+    {
+        "item": "Croissant",
+        "timestamp": "2025-07-21T13:29:08"
+    },
+    {
+        "item": "Blueberry Muffin",
+        "timestamp": "2025-07-21T13:42:25"
+    },
+    {
+        "item": "Chocolate Cake",
+        "timestamp": "2025-07-21T13:43:54"
+    },
+    {
+        "item": "Croissant",
+        "timestamp": "2025-07-21T14:46:36"
+    },
+    {
+        "item": "Chocolate Cake",
+        "timestamp": "2025-07-21T15:08:51"
+    },
+    {
+        "item": "Croissant",
+        "timestamp": "2025-07-22T08:57:25"
+    },
+    {
+        "item": "Siyona's",
+        "timestamp": "2025-07-23T12:20:55"
+    }
+]

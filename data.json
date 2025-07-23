@@ -1,0 +1,98 @@
+[
+    {
+        "name": "Flour",
+        "unit": "kg",
+        "quantity": 18,
+        "low_stock_threshold": 3
+    },
+    {
+        "name": "Baking Powder",
+        "unit": "grams",
+        "quantity": 193.35,
+        "low_stock_threshold": 50
+    },
+    {
+        "name": "sugar",
+        "unit": "kg",
+        "quantity": 7.45,
+        "low_stock_threshold": 1
+    },
+    {
+        "name": "Butter",
+        "unit": "grams",
+        "quantity": 244.0,
+        "low_stock_threshold": 100
+    },
+    {
+        "name": "Yeast",
+        "unit": "grams",
+        "quantity": 15.0,
+        "low_stock_threshold": 10
+    },
+    {
+        "name": "Blueberries",
+        "unit": "grams",
+        "quantity": 150.0,
+        "low_stock_threshold": 50
+    },
+    {
+        "name": "Baking Soda",
+        "unit": "grams",
+        "quantity": 293.35,
+        "low_stock_threshold": 40
+    },
+    {
+        "name": "Cocoa Powder",
+        "unit": "kg",
+        "quantity": 2.8,
+        "low_stock_threshold": 0.2
+    },
+    {
+        "name": "Milk",
+        "unit": "litres",
+        "quantity": 8.4,
+        "low_stock_threshold": 1
+    },
+    {
+        "name": "Vegetable Oil",
+        "unit": "litres",
+        "quantity": 2.9,
+        "low_stock_threshold": 0.5
+    },
+    {
+        "name": "Vanilla Extract",
+        "unit": "ml",
+        "quantity": 90.0,
+        "low_stock_threshold": 10
+    },
+    {
+        "name": "Eggs",
+        "unit": "units",
+        "quantity": 5.0,
+        "low_stock_threshold": 2
+    },
+    {
+        "name": "Salt",
+        "unit": "grams",
+        "quantity": 990,
+        "low_stock_threshold": 50
+    },
+    {
+        "name": "Frosting",
+        "unit": "grams",
+        "quantity": 500.0,
+        "low_stock_threshold": 200
+    },
+    {
+        "name": "Sprinkles",
+        "unit": "grams",
+        "quantity": 900.0,
+        "low_stock_threshold": 200
+    },
+    {
+        "name": "Icing sugar",
+        "unit": "grams",
+        "quantity": "200",
+        "low_stock_threshold": 20
+    }
+]

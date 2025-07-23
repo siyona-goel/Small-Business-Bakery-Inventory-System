@@ -1,0 +1,140 @@
+{
+  "Chocolate Cake": {
+    "flour": {
+      "amount": 0.4,
+      "unit": "kg"
+    },
+    "sugar": {
+      "amount": 0.5,
+      "unit": "kg"
+    },
+    "eggs": {
+      "amount": 2,
+      "unit": "units"
+    },
+    "cocoa powder": {
+      "amount": 0.2,
+      "unit": "kg"
+    },
+    "baking powder": {
+      "amount": 6.65,
+      "unit": "grams"
+    },
+    "baking soda": {
+      "amount": 6.65,
+      "unit": "grams"
+    },
+    "milk": {
+      "amount": 0.2,
+      "unit": "litres"
+    },
+    "vegetable oil": {
+      "amount": 0.1,
+      "unit": "litres"
+    },
+    "vanilla extract": {
+      "amount": 10,
+      "unit": "ml"
+    },
+    "salt": {
+      "amount": 4.2,
+      "unit": "grams"
+    }
+  },
+  "Croissant": {
+    "flour": {
+      "amount": 0.5,
+      "unit": "kg"
+    },
+    "butter": {
+      "amount": 56,
+      "unit": "grams"
+    },
+    "yeast": {
+      "amount": 15,
+      "unit": "grams"
+    },
+    "sugar": {
+      "amount": 0.05,
+      "unit": "kg"
+    },
+    "salt": {
+      "amount": 8.4,
+      "unit": "grams"
+    },
+    "milk": {
+      "amount": 0.36,
+      "unit": "litres"
+    },
+    "eggs": {
+      "amount": 1,
+      "unit": "units"
+    }
+  },
+  "Blueberry Muffin": {
+    "flour": {
+      "amount": 0.2,
+      "unit": "kg"
+    },
+    "sugar": {
+      "amount": 0.1,
+      "unit": "kg"
+    },
+    "blueberries": {
+      "amount": 210,
+      "unit": "grams"
+    },
+    "eggs": {
+      "amount": 2,
+      "unit": "units"
+    },
+    "baking powder": {
+      "amount": 4.2,
+      "unit": "grams"
+    },
+    "baking soda": {
+      "amount": 4.2,
+      "unit": "grams"
+    },
+    "salt": {
+      "amount": 2.1,
+      "unit": "grams"
+    },
+    "butter": {
+      "amount": 113,
+      "unit": "grams"
+    },
+    "vanilla extract": {
+      "amount": 15,
+      "unit": "ml"
+    },
+    "milk": {
+      "amount": 0.06,
+      "unit": "litres"
+    },
+    "sour cream": {
+      "amount": 120,
+      "unit": "grams"
+    }
+  },
+  "Siyona's": {
+    "frosting": {
+      "amount": 500,
+      "unit": "grams"
+    },
+    "sprinkles": {
+      "amount": 100,
+      "unit": "grams"
+    }
+  },
+  "Akshaj's": {
+    "Flour": {
+      "amount": 2,
+      "unit": "kg"
+    },
+    "Sugar": {
+      "amount": 1,
+      "unit": "kg"
+    }
+  }
+}
