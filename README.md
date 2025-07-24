@@ -8,7 +8,7 @@ A full-stack inventory management system tailored for small home bakeries. Built
 - ✔️ Bake items from predefined (saved) recipes (auto-subtracts ingredients from stock)
 - ✔️ Create and manage recipes dynamically
 - ✔️ View baking history (timestamped logs)
-- ✔️ A dashboard overview with quick insights
+- ✔️ A dashboard overview with quick insights (total ingredients, low-stock items, items baked today, last baked item, baking trends and recent baking activity)
 - ✔️ Persistent data storage using local JSON files
 
 ## ⚙️ Tech Stack
