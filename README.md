@@ -19,7 +19,7 @@ A full-stack inventory management system tailored for small home bakeries. Built
 
 ## 📦 Project Structure
 ```
-final-bakery-project/
+Small-Business_Bakery_Inventory_System/
 ├── app/         # Flask backend
 │ ├── app.py     # Main backend logic
 │ ├── data/      # Ingredient data JSON
@@ -51,3 +51,6 @@ python app.py
 cd frontend
 npm install
 npm run dev
+```
+## 🙌 Acknowledgements
+Built with love to support small business owners and home bakers.
