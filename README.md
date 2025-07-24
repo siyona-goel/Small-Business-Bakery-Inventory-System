@@ -18,6 +18,7 @@ A full-stack inventory management system tailored for small home bakeries. Built
 - **Dev Tools:** Cursor, Git, VS Code, WSL (Ubuntu), GitHub
 
 ## 📦 Project Structure
+```
 final-bakery-project/
 ├── app/         # Flask backend
 │ ├── app.py     # Main backend logic
@@ -31,12 +32,11 @@ final-bakery-project/
 ├── venv/        # Virtual environment (ignored in Git)
 ├── .gitignore
 └── requirements.txt # Python dependencies
+```
 
 ## 🧪 How to Run Locally
-
-### 1. Clone the Repository
-
 ```bash
+### 1. Clone the Repository
 git clone https://github.com/siyonaaa/Small-Business-Bakery-Inventory-System.git
 cd Small-Business-Bakery-Inventory-System
 
