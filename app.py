@@ -3,43 +3,56 @@ from datetime import datetime
 import json
 import os
 
+# Initialize the Flask app
 app = Flask(__name__)
+
+# Enable CORS so frontend apps (like React) can access this backend
 from flask_cors import CORS
 CORS(app)
 
+# File paths for storing persistent data
 HISTORY_FILE = 'history.json'
+RECIPES_FILE = 'recipes.json' # Predefined recipes (with units)
+DATA_FILE = 'data.json'
 
-# Predefined recipes (with units)
-RECIPES_FILE = 'recipes.json'
+# ---------- Helper Functions for Recipes ----------
 
 def load_recipes():
+    # Load saved recipes from the recipes file
     if os.path.exists(RECIPES_FILE):
         with open(RECIPES_FILE, 'r') as file:
             return json.load(file)
     return {}
 
 def save_recipes():
+    # Save the current RECIPES dict to file
     with open(RECIPES_FILE, 'w') as file:
         json.dump(RECIPES, file, indent=2)
 
+# Load the recipes at startup
 RECIPES = load_recipes()
 
+# ---------- Helper Functions for Baking History ----------
+
 def load_history():
+    # Load historical bake records from file
     if os.path.exists(HISTORY_FILE):
         with open(HISTORY_FILE, 'r') as f:
             return json.load(f)
     return []
 
 def save_history(history):
+    # Save the baking history back to file
     with open(HISTORY_FILE, 'w') as f:
         json.dump(history, f, indent=4)
 
-# Temporary in-memory "database"
+# ---------- Ingredient Inventory Logic ----------
+
+# In-memory storage for ingredients
 ingredients = []
 
-DATA_FILE = 'data.json'
-
 def load_ingredients():
+    # Load saved ingredient list into memory
     global ingredients
     if os.path.exists(DATA_FILE):
         with open(DATA_FILE, 'r') as f:
@@ -47,8 +60,11 @@ def load_ingredients():
             ingredients.extend(json.load(f))
 
 def save_ingredients():
+    # Save current ingredient state to file
     with open(DATA_FILE, 'w') as f:
         json.dump(ingredients, f, indent=4)
+
+# ---------- Routes ----------
 
 @app.route('/')
 def index():
@@ -57,11 +73,13 @@ def index():
 # Route to get available recipes
 @app.route('/recipes', methods=['GET'])
 def get_recipes():
+    # Return all stored recipes
     return jsonify(RECIPES)
 
 # Route to bake an item
 @app.route('/bake', methods=['POST'])
 def bake_item():
+    # Endpoint to process a baking request based on available ingredients
     data = request.get_json()
     item_name = data.get('item')
     
@@ -93,6 +111,7 @@ def bake_item():
                     "error": f"Unit mismatch for {ingredient_name}: recipe needs {needed_qty} {recipe_details['unit']}, but inventory has {available_qty} {found_ingredient['unit']}"
                 }), 400
 
+            # Check if the ingredient is available in sufficient quantity
             if available_qty < needed_qty:
                 insufficient_ingredients.append({
                     "name": ingredient_name,
@@ -100,6 +119,7 @@ def bake_item():
                     "needed": f"{needed_qty} {recipe_details['unit']}"
                 })
     
+    # Respond to missing or insufficient items
     if missing_ingredients:
         return jsonify({
             "error": f"Missing ingredients: {', '.join(missing_ingredients)}"
@@ -138,6 +158,7 @@ def bake_item():
 # Route to add a new ingredient
 @app.route('/ingredients', methods=['POST'])
 def add_ingredient():
+    # Add a new ingredient to inventory
     data = request.get_json()
 
     # Check if ingredient already exists
@@ -151,6 +172,7 @@ def add_ingredient():
         "quantity": data["quantity"],
         "low_stock_threshold": data["low_stock_threshold"]
     }
+
     ingredients.append(ingredient)
     save_ingredients()
     return jsonify({"message": "Ingredient added!", "ingredient": ingredient})
@@ -230,6 +252,7 @@ def add_baking_history():
 
 @app.route('/ingredients/<name>/subtract', methods=['POST'])
 def subtract_ingredient(name):
+    # Manually subtract from an ingredient
     data = request.get_json()
     amount = data.get("amount", 0)
 
@@ -251,6 +274,7 @@ def subtract_ingredient(name):
 
 @app.route('/add-recipe', methods=['POST'])
 def add_recipe():
+    # Add a new recipe to the collection
     data = request.get_json()
     recipe_name = data.get('recipe_name')
     ingredients = data.get('ingredients')
@@ -265,7 +289,10 @@ def add_recipe():
     save_recipes()
     return jsonify({"message": f"Recipe '{recipe_name}' added successfully"}), 200
 
+# ---------- Start the App ----------
 
 if __name__ == '__main__':
+    # Load ingredients at startup
     load_ingredients()
+    # Start the Flask server
     app.run(debug=True)
