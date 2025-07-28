@@ -116,25 +116,5 @@
       "amount": 120,
       "unit": "grams"
     }
-  },
-  "Siyona's": {
-    "frosting": {
-      "amount": 500,
-      "unit": "grams"
-    },
-    "sprinkles": {
-      "amount": 100,
-      "unit": "grams"
-    }
-  },
-  "Akshaj's": {
-    "Flour": {
-      "amount": 2,
-      "unit": "kg"
-    },
-    "Sugar": {
-      "amount": 1,
-      "unit": "kg"
-    }
-  }
+  }  
 }

@@ -2,7 +2,7 @@
     {
         "name": "Flour",
         "unit": "kg",
-        "quantity": 18,
+        "quantity": 3,
         "low_stock_threshold": 3
     },
     {
@@ -14,7 +14,7 @@
     {
         "name": "sugar",
         "unit": "kg",
-        "quantity": 7.45,
+        "quantity": 0.9,
         "low_stock_threshold": 1
     },
     {
@@ -50,7 +50,7 @@
     {
         "name": "Milk",
         "unit": "litres",
-        "quantity": 8.4,
+        "quantity": 1,
         "low_stock_threshold": 1
     },
     {
