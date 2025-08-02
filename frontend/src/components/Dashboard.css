@@ -22,7 +22,7 @@
   white-space: nowrap;
 }
 
-.inventory-button {  
+.dashboard-inventory-button {  
   position: fixed;
   top: 32px;
   right: 40px;
@@ -36,7 +36,7 @@
   z-index: 1000;
 }
 
-.inventory-button:hover {
+.dashboard-inventory-button:hover {
   background: #7c4a02;
   text-decoration: none;
   color: white;

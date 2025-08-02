@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import BakeItem from "./components/BakeItem";
 import Dashboard from "./components/Dashboard";
+import LandingPage from "./components/LandingPage";
 import "./App.css";
 
 // RecipeForm component for creating and saving new recipes
@@ -448,7 +449,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<InventoryPage />} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/inventory" element={<InventoryPage />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </Router>

@@ -68,7 +68,7 @@ function Dashboard() {
     <div className="dashboard">
       <div className="dashboard-header">
         <h1>Bakery Dashboard</h1>
-        <Link to="/" className="inventory-button">
+        <Link to="/inventory" className="dashboard-inventory-button">
           Go to Inventory
         </Link>
       </div>
