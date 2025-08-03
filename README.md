@@ -54,3 +54,34 @@ npm run dev
 ```
 ## 🙌 Acknowledgements
 Built with love to support small business owners and home bakers.
+
+## ✨ End-Product
+
+- The Landing Page
+![Alt text](images/1.png)
+
+- The Inventory Page: View all your current ingredients in stock
+![Alt text](images/2.png)
+
+- Filter the list to show only the current items running low in stock
+![Alt text](images/3.png)
+
+- Select an ingredient to see its details
+![Alt text](images/4.png)
+
+- Edit an ingredient's details
+![Alt text](images/5.png)
+
+- Record what you're about to bake based on your previously defined recipes or add a new recipe
+![Alt text](images/6.png)
+
+- Alerts you if you try to bake an item which uses ingredients that are currently low in stock
+![Alt text](images/7.png)
+
+- When you successfully bake an item
+![Alt text](images/8.png)
+
+- The Dashboard Page
+![Alt text](images/9.png)
+![Alt text](images/10.png)
+![Alt text](images/11.png)
