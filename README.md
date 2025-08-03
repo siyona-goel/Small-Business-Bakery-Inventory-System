@@ -60,7 +60,7 @@ Built with love to support small business owners and home bakers.
 - The Landing Page
 ![Alt text](images/1.png)
 
-- The Inventory Page: View all your current ingredients in stock
+- The Inventory Page: View all your current ingredients in stock and add new ingredients
 ![Alt text](images/2.png)
 
 - Filter the list to show only the current items running low in stock
