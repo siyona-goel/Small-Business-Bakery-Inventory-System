@@ -2,25 +2,25 @@
     {
         "name": "Flour",
         "unit": "kg",
-        "quantity": 1.9,
+        "quantity": 2.5,
         "low_stock_threshold": 3
     },
     {
         "name": "Baking Powder",
         "unit": "grams",
-        "quantity": 182.5,
+        "quantity": 180,
         "low_stock_threshold": 50
     },
     {
         "name": "sugar",
         "unit": "kg",
-        "quantity": 0.25,
+        "quantity": 1,
         "low_stock_threshold": 1
     },
     {
         "name": "Butter",
         "unit": "grams",
-        "quantity": 75.0,
+        "quantity": 331.0,
         "low_stock_threshold": 100
     },
     {
@@ -32,13 +32,13 @@
     {
         "name": "Blueberries",
         "unit": "grams",
-        "quantity": 90.0,
+        "quantity": 590.0,
         "low_stock_threshold": 50
     },
     {
         "name": "Baking Soda",
         "unit": "grams",
-        "quantity": 282,
+        "quantity": 277.8,
         "low_stock_threshold": 40
     },
     {
@@ -50,7 +50,7 @@
     {
         "name": "Milk",
         "unit": "litres",
-        "quantity": 10,
+        "quantity": 9.58,
         "low_stock_threshold": 1
     },
     {
@@ -62,19 +62,19 @@
     {
         "name": "Vanilla Extract",
         "unit": "ml",
-        "quantity": 65.0,
+        "quantity": 50.0,
         "low_stock_threshold": 10
     },
     {
         "name": "Eggs",
         "unit": "units",
-        "quantity": 0.0,
+        "quantity": 9.0,
         "low_stock_threshold": 2
     },
     {
         "name": "Salt",
         "unit": "grams",
-        "quantity": 975.3,
+        "quantity": 891.6,
         "low_stock_threshold": 50
     },
     {
@@ -98,7 +98,7 @@
     {
         "name": "sour cream",
         "unit": "grams",
-        "quantity": 380.0,
+        "quantity": 260.0,
         "low_stock_threshold": 100
     }
 ]
