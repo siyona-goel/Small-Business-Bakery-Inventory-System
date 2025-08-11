@@ -20,18 +20,24 @@ A full-stack inventory management system tailored for small home bakeries. Built
 ## 📦 Project Structure
 ```
 Small-Business_Bakery_Inventory_System/
-├── app/         # Flask backend
-│ ├── app.py     # Main backend logic
-│ ├── data/      # Ingredient data JSON
-│ ├── history/   # Baking history JSON
-│ └── recipes/   # Recipes JSON
-├── frontend/    # React frontend
-│ ├── src/
-│ ├── public/
-│ └── ...
-├── venv/        # Virtual environment (ignored in Git)
-├── .gitignore
-└── requirements.txt # Python dependencies
+├── app.py           # Main Flask backend logic
+├── data.json        # Ingredient data
+├── history.json     # Baking history
+├── recipes.json     # Recipes
+├── requirements.txt # Python dependencies
+├── README.md
+├── images/          # Images for README
+│
+├── frontend/        # React frontend
+│ ├── src/           # Frontend source code
+│ ├── public/        # Static assets
+│ ├── .gitignore
+│ ├── README.md
+│ ├── eslint.config.js
+│ ├── index.html
+│ ├── package-lock.json
+│ ├── package.json
+│ ├── vite.config.js
 ```
 
 ## 🧪 How to Run Locally
