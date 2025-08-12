@@ -8,13 +8,13 @@ A full-stack inventory management system tailored for small home bakeries. Built
 - ✔️ Bake items from predefined (saved) recipes (auto-subtracts ingredients from stock)
 - ✔️ Create and manage recipes dynamically
 - ✔️ View baking history (timestamped logs)
-- ✔️ A dashboard overview with quick insights (total ingredients, low-stock items, items baked today, last baked item, baking trends and recent baking activity)
+- ✔️ A dashboard overview with quick insights (total ingredients, low-stock items, items baked today, last baked item, baking trends & recent baking activity)
 - ✔️ Persistent data storage using local JSON files
 
 ## ⚙️ Tech Stack
 - **Frontend:** React + Vite + Tailwind CSS
 - **Backend:** Flask (Python) + Flask-CORS
-- **Persistence:** JSON files (`data/`, `history/`, `recipes/`)
+- **Persistence:** JSON files (`data.json`, `history.json`, `recipes.json`)
 - **Dev Tools:** Cursor, Git, VS Code, WSL (Ubuntu), GitHub
 
 ## 📦 Project Structure
